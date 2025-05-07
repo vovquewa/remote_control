@@ -1,4 +1,12 @@
 import flet as ft
+
+# import sys
+# from pathlib import Path
+
+# sys.path.append(str(Path(__file__).resolve().parent.parent))  # Добавляет src/
+# import os
+
+# print("PYTHONPATH:", os.getenv("PYTHONPATH"))
 from core.command import (
     Light,
     Thermostat,
@@ -124,4 +132,8 @@ def main(page: ft.Page):
     )
 
 
-ft.app(target=main)
+# ft.app(target=main)
+
+
+def run_app():
+    ft.app(target=main)
